@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +25,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} custom-cursor`}>
+        <div className="custom-cursor__cursor"></div>
+        <div className="custom-cursor__cursor-two"></div>
+
+        {/* <div className="preloader">
+          <div className="preloader__image" style={{ backgroundImage: "url(images/loader.png)" }}></div>
+        </div> */}
+
+        <main className="page-wrapper">
+          {children}
+        </main>
+
+
+        <Script src="/js/jquery-3.5.1.min.js" />
+        <Script src="/js/bootstrap.bundle.min.js" />
+        <Script src="/js/bootstrap-select.min.js" />
+        <Script src="/js/jquery-ui.js" />
+        <Script src="/js/jarallax.min.js" />
+        <Script src="/js/jquery.ajaxchimp.min.js" />
+        <Script src="/js/jquery.appear.min.js" />
+        <Script src="/js/jquery.circle-progress.min.js" />
+        <Script src="/js/jquery.magnific-popup.min.js" />
+        <Script src="/js/jquery.validate.min.js" />
+        <Script src="/js/nouislider.min.js" />
+        <Script src="/js/odometer.min.js" />
+        <Script src="/js/tiny-slider.min.js" />
+        <Script src="/js/owl.carousel.min.js" />
+        <Script src="/js/wNumb.min.js" />
+        <Script src="/js/jquery.circleType.js" />
+        <Script src="/js/jquery.lettering.min.js" />
+        <Script src="/js/wow.js" />
+        <Script src="/js/isotope.js" />
+        <Script src="/js/countdown.min.js" />
+        <Script src="/js/ogency.js" />
       </body>
     </html>
   );
