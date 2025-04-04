@@ -1,3 +1,4 @@
+import Socials from "@/components/Socials"
 import Link from "next/link"
 
 const Nav = () => {
@@ -9,70 +10,70 @@ const Nav = () => {
             <Link href="/">
               <picture>
                 <source srcSet="/images/logo-light.png" type="image/png" />
-                <img src="/images/logo-light.png" width="34" height="34" alt="Ogency" />
+                <img src="/images/logo-light.png" width="266" height="100" alt="Ogency" />
               </picture>
             </Link>
           </div>
           <div className="main-menu__nav">
             <ul className="main-menu__list one-page-scroll-menu">
-              <li className="dropdown megamenu scrollToLink current">
-                <Link href="#home">Home</Link>
-                <ul>
-                  <li>
-                    <section className="home-showcase">
-                      <div className="container">
-                        <div className="home-showcase__inner">
-                          <div className="row">
-                            {[1, 2, 3, 4].map((num) => (
-                              <div key={num} className="col-lg-3">
-                                <div className="home-showcase__item">
-                                  <div className="home-showcase__image">
-                                    <picture>
-                                      <source srcSet={`/images/home-showcase-1-${num}.jpg`} type="image/jpg" />
-                                      <img src={`/images/home-showcase-1-${num}.jpg`} width="300" height="200" alt={`Homepage 0${num}`} />
-                                    </picture>
-                                    <div className="home-showcase__buttons">
-                                      <Link href={`/index${num === 1 ? '' : `-${num}`}.html`} className="ogency-btn home-showcase__buttons__item">
-                                        Multi Page
-                                      </Link>
-                                      {num !== 4 && (
-                                        <Link href={`/index${num === 1 ? '' : `-${num}`}-one-page.html`} className="ogency-btn home-showcase__buttons__item">
-                                          One Page
-                                        </Link>
-                                      )}
-                                    </div>
-                                  </div>
-                                  <h3 className="home-showcase__title">Homepage 0{num}</h3>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                  </li>
-                </ul>
+              <li key="home" className="scrollToLink">
+                <Link href="#home">Inicio</Link>
               </li>
-              {['about', 'services', 'portfolio', 'testimonial', 'blog'].map((section) => (
-                <li key={section} className="scrollToLink">
-                  <Link href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</Link>
-                </li>
-              ))}
+              <li key="about" className="scrollToLink">
+                <Link href="#about">Nosotros</Link>
+              </li>
+              <li key="services" className="scrollToLink">
+                <Link href="#services">Servicios</Link>
+              </li>
+              <li key="portfolio" className="scrollToLink">
+                <Link href="#portfolio">Portafolio</Link>
+              </li>
+              <li key="why-choose" className="scrollToLink">
+                <Link href="#why-choose">Marketing</Link>
+              </li>
+              <li key="contact" className="scrollToLink">
+                <Link href="#contact">Contacto</Link>
+              </li>
             </ul>
           </div>
+
           <div className="main-menu__right">
-            <button className="main-menu__toggler mobile-nav__toggler">
+            <Link href="#" className="main-menu__toggler mobile-nav__toggler">
               <i className="fa fa-bars"></i>
-            </button>
-            <button className="main-menu__search search-toggler">
-              <i className="icon-magnifying-glass"></i>
-            </button>
-            <Link href="/cart" className="main-menu__cart cart-toggler">
-              <i className="icon-shopping-cart"></i>
             </Link>
           </div>
+
         </div>
       </nav>
+
+      <div className="mobile-nav__wrapper">
+        <div className="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div className="mobile-nav__content">
+          <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
+          <div className="logo-box">
+            <Link href="/" title="mpm logo">
+              <picture>
+                <source srcSet="/images/logo-light.png" type="image/png" />
+                <img src="/images/logo-light.png" width="266" height="100" alt="Ogency" />
+              </picture>
+            </Link>
+          </div>
+          <div className="mobile-nav__container"></div>
+          <ul className="mobile-nav__contact list-unstyled">
+            <li>
+              <i className="fas fa-envelope"></i>
+              <a href="mailto:needhelp@packageName__.com">needhelp@finlon.com</a>
+            </li>
+            <li>
+              <i className="icon-phone-call"></i>
+              <a href="tel:666-888-0000">666 888 0000</a>
+            </li>
+          </ul>
+          <div className="mobile-nav__social">
+            <Socials />
+          </div>
+        </div>
+      </div>
     </header>
   )
 }
