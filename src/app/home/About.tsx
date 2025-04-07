@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle"
 
 const About = () => {
   return (
-    <section className="about-two" style={{ backgroundImage: "url(/images/backgrounds/about-bg-1.png)" }} id="about">
+    <section className="about-two" style={{ backgroundImage: "url(/images/backgrounds/about-bg-1.png)" }} id="sobre-nosotros">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 wow fadeInUp animated" data-wow-delay="200ms">

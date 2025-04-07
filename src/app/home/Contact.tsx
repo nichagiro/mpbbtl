@@ -21,7 +21,7 @@ const ContactSection: React.FC = () => {
   }
 
   return (
-    <section className="contact-one" id="contact">
+    <section className="contact-one" id="contacto">
       <div
         className="contact-one__bg"
         style={{ backgroundImage: "url(/images/backgrounds/contact-bg-1.png)" }}

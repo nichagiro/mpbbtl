@@ -1,11 +1,11 @@
-import About from "./About";
-import HeroBanner from "./HeroBanner";
+import About from "./home/About";
+import HeroBanner from "./home/HeroBanner";
 import Divider from "@/components/Divider";
-import Services from "./Services";
-import WhyChooseUs from "./WhyChooseUs";
+import Services from "./home/Services";
+import WhyChooseUs from "./home/WhyChooseUs";
 import SliderText from "@/components/SliderText";
-import ProjectShowcase from "./ProjectShowcase";
-import ContactSection from "./Contact";
+import ProjectShowcase from "./home/ProjectShowcase";
+import ContactSection from "./home/Contact";
 
 export default function Home() {
   return (

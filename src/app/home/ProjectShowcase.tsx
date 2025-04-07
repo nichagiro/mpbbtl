@@ -38,7 +38,7 @@ const projects = [
 const ProjectShowcase = () => {
 
   return (
-    <section className="project-two" id="portfolio">
+    <section className="project-two" id="portafolio">
       <div className="container">
         <div className="section-title text-center">
           <SectionTitle

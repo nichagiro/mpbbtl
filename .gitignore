@@ -42,3 +42,8 @@ next-env.d.ts
 
 
 public
+.firebase/
+
+# Archivos temporales o de configuración local
+firebase-debug.log
+firebase-debug.*.log

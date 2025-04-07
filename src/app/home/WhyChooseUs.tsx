@@ -4,7 +4,7 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose" id="why-choose">
+    <section className="why-choose" id="porque-escogernos">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 wow fadeInLeft animated" data-wow-delay="200ms">
