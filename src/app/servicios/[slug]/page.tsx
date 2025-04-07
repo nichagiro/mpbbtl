@@ -5,21 +5,20 @@ import ServiceConact from "./Conact";
 import OurBenefits from "./OurBenefits";
 import WhyChoose from "./WhyChoose";
 import Skills from "./Skills";
-
-// db, helper
-import { services } from "@/db/services";
-import getDataHelper from "@/helper/getDataHelper";
 import Picture from "@/components/Picture";
 
-export async function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
+// db, helper, types
+import { services } from "@/db/services";
+import getDataHelper from "@/helper/getDataHelper";
+
+interface PageProps {
+  params: { slug: string }
 }
 
-export default async function Servicios({ params }: { params: { slug: string } }) {
-  const data = await params;
-  const { title, description } = getDataHelper(services, "slug", data.slug);
+export default async function Servicios({ params }: PageProps) {
+  const { slug } = await params;
+  console.log("🚀 ~ Servicios ~ slug:", slug)
+  const { title, description } = getDataHelper(services, "slug", slug);
 
   const menuList = services.map((service) => ({
     name: service.title,
@@ -57,3 +56,9 @@ export default async function Servicios({ params }: { params: { slug: string } }
   );
 }
 
+// generateStaticParams también necesita ser async si la usas en rutas estáticas
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
