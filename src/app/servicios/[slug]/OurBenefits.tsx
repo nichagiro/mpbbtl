@@ -1,13 +1,12 @@
+import Picture from "@/components/Picture"
+
 const OurBenefits = () => {
   return (
     <div className="services-details__benefit">
       <div className="row">
         <div className="col-xl-6 col-lg-12 col-md-6">
           <div className="services-details__benefit__img">
-            <picture>
-              <source srcSet="/images/service/services-details-benefit-img.jpg" />
-              <img src="/images/service/services-details-benefit-img.jpg" alt="ogency" />
-            </picture>
+            <Picture src="/images/service/services-details-benefit-img.jpg" alt="ogency" />
           </div>
         </div>
         <div className="col-xl-6 col-lg-12 col-md-6">

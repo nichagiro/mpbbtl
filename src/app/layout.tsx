@@ -9,6 +9,7 @@ import Nav from "@/layouts/Nav";
 import Whatsapp from "@/components/Whatsapp";
 import Loading from "@/components/Loading";
 import ScrollTop from "@/components/ScrollTop";
+import ScriptRunner from "./ScriptRunner";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -46,6 +47,8 @@ export default function RootLayout({
         <Whatsapp />
         <ScrollTop />
 
+        <ScriptRunner />
+
         <Script src="/js/jquery-3.5.1.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.bundle.min.js" />
         <Script src="/js/jquery-ui.js" />
@@ -65,7 +68,6 @@ export default function RootLayout({
         <Script src="/js/wow.js" />
         <Script src="/js/isotope.js" />
         <Script src="/js/countdown.min.js" />
-        <Script src="/js/ogency.js" />
       </body>
     </html>
   );

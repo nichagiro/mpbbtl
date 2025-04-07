@@ -63,11 +63,13 @@ const Nav = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:needhelp@packageName__.com">needhelp@finlon.com</a>
+                <a href="mailto:needhelp@packageName__.com">
+                  {process.env.NEXT_PUBLIC_EMAIL}
+                </a>
               </li>
               <li>
                 <i className="icon-phone-call"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
+                <a href="tel:3503442703">{process.env.NEXT_PUBLIC_CONTACT_NUMBER}</a>
               </li>
             </ul>
             <div className="mobile-nav__social">

@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="main-footer__about">
               <p className="footer-widget__text">Comencemos a trabajar juntos</p>
-              <a href="mailto:help@company.com">paola.burbano@mpmbtl.com</a>
+              <a href="mailto:help@company.com">{process.env.NEXT_PUBLIC_EMAIL}</a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">
@@ -36,7 +36,7 @@ const Footer = () => {
                     Cra. 18 #10-31, COMUNA 3, Cali, Valle del Cauca
                   </a>
                 </li>
-                <li>3503442703 - 3188602676 </li>
+                <li>{process.env.NEXT_PUBLIC_CONTACT_NUMBER}</li>
                 <li>Lunes a viernes - 8am - 6pm</li>
                 <li>Sábados : 8am - 12pm</li>
               </ul>

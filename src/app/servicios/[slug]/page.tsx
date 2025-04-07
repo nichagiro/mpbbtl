@@ -1,7 +1,7 @@
 // ui
 import BackgroundSection from "@/components/BackgroundSection";
 import MenuList from "../../../components/MenuList";
-import ServiceConact from "./ServiceConact";
+import ServiceConact from "./Conact";
 import OurBenefits from "./OurBenefits";
 import WhyChoose from "./WhyChoose";
 import Skills from "./Skills";
