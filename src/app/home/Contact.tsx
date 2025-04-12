@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
               <div className="ogency-stretch__image wow slideInRight animated" data-wow-delay="400ms">
                 <picture>
                   <source srcSet="/images/resources/contact-1.jpg" />
-                  <img src="/images/resources/contact-1.jpg" alt="ogency" width={500} height={500} />
+                  <img src="/images/resources/contact-1.jpg" alt="ogency" width={890} height={763} />
                 </picture>
                 <div className="ogency-stretch__image__angle-top"></div>
                 <div className="ogency-stretch__image__angle-middle"></div>
