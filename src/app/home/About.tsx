@@ -10,18 +10,19 @@ const About = () => {
             <div className="about-two__left">
               <SectionTitle tagline="Publicidad que deja huella" title="Sobre Nosotros" />
               <p className="about-two__left--text w-75">
-                Transformamos ideas en estrategias publicitarias efectivas, llevando tu marca a las calles y a la mente de tu público.
+                “La clave del marketing no es solo vender, sino crear momentos inolvidables que conecten emocionalmente con las personas.”
               </p>
             </div>
           </div>
           <div className="col-lg-6 wow fadeInUp animated" data-wow-delay="400ms">
             <div className="about-two__right">
               <p className="about-two__right--text">
-                Llevamos más de 12 años creando estrategias innovadoras en publicidad exterior y marketing BTL.
-                Transformamos espacios urbanos en escenarios publicitarios que generan impacto y conexión con el público.
+                Nos especializamos en estrategias experienciales diseñadas para generar conexión auténtica entre marcas y consumidores,
+                combinando creatividad, tecnología y ejecución impecable. MPM Marketing Experiencial es el aliado estratégico de marcas que
+                buscan experiencias memorables y campañas de alto impacto.
               </p>
               <blockquote className="about-two__right--quote">
-                📢 Desde publicidad móvil con carros LED hasta activaciones de marca y eventos, convertimos cada campaña en una experiencia memorable.
+                📢 Resultados que hablan por sí solos:
               </blockquote>
             </div>
             <div className="row">
@@ -42,6 +43,6 @@ export default About
 
 
 const counterData = [
-  { count: 2, data: "k", title: "Projectos Finalizados" },
-  { count: 1, data: "k", title: "Clientes Activos" },
+  { count: 2, data: "k", title: "Projectos Completados" },
+  { count: 1, data: "k", title: "Clientes Satisfechos" },
 ];

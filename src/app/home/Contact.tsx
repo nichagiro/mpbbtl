@@ -4,8 +4,10 @@ import Button from "@/components/Button";
 import Input from "@/components/Input";
 import SectionTitle from "@/components/SectionTitle";
 import Textarea from "@/components/Textarea";
+import { useState } from "react";
 
 const ContactSection: React.FC = () => {
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -13,10 +15,24 @@ const ContactSection: React.FC = () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviarlo a una API
-    console.log(data);
+    setSubmitted(true)
+    return
+    fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        service_id: 'service_fq25tjo',
+        template_id: 'template_rseuw4o',
+        user_id: 'vjI7Jjs_Fpg9Zwc39',
+        template_params: data
+      }),
+    })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
 
-    // Resetear el formulario después de enviar
     form.reset();
   }
 
@@ -31,7 +47,7 @@ const ContactSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-6 wow fadeInLeft animated" data-wow-delay="200ms">
             <div className="contact-one__left">
-              <SectionTitle tagline="Conéctate con nosotros" title="Hablemos de tu próximo proyecto" />
+              <SectionTitle tagline="Conéctate con nosotros" title="Agenda una reunión y empecemos a transformar la experiencia de tu marca." />
               <div className="contact-one__form-box">
                 <form className="contact-one__form contact-form-validated" onSubmit={handleSubmit}>
                   <div className="row">
@@ -50,12 +66,17 @@ const ContactSection: React.FC = () => {
                     <div className="col-md-12">
                       <Textarea name="message" placeholder="Mensaje" required />
                       <div className="contact-one__btn-box pt-1">
-                        <Button type="submit">Enviar</Button>
+                        {<Button type="submit">Enviar</Button>}
                       </div>
                     </div>
                   </div>
                 </form>
-                <div className="result"></div>
+                {
+                  submitted &&
+                  <div className="alert alert-warning mt-3" role="alert">
+                    Fomrulario enviado correctamente.
+                  </div>
+                }
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="row">
           <div className="col-lg-5 wow fadeInLeft animated" data-wow-delay="200ms">
             <div className="section-title">
-              <SectionTitle tagline="Brindamos el mejor servicio" title="¿Por qué elegirnos?" />
+              <SectionTitle tagline="Más que ejecución, somos un aliado estratégico" title="¿Por qué elegirnos?" />
             </div>
             {reasons.map((reason, index) => <ListText {...reason} key={index} />)}
           </div>
@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
               </div>
               <div className="why-choose__image__author wow fadeInRight animated" data-wow-delay="300ms">
                 <picture>
-                  <source srcSet="/images/resources//why-choose-1-2.jpg"/>
+                  <source srcSet="/images/resources//why-choose-1-2.jpg" />
                   <img src="assets/images/resources/why-choose-1-2.jpg" alt="ogency" />
                 </picture>
               </div>
@@ -46,16 +46,20 @@ const WhyChooseUs = () => {
 
 const reasons = [
   {
-    title: "Estrategias innovadoras",
-    text: "No hacemos publicidad tradicional, diseñamos campañas que cautivan y conectan con el público.",
+    title: "Enfoque estratégico",
+    text: "Diseñamos experiencias alineadas con los objetivos de tu marca.",
   },
   {
-    title: "Proyectos de alta calidad",
-    text: "Cada campaña está pensada para maximizar visibilidad y engagement con estándares de calidad superiores.",
+    title: "Ejecución impecable",
+    text: "Contamos con la infraestructura y el equipo adecuado.",
   },
   {
-    title: "Equipo experto",
-    text: "Nuestro equipo de creativos, estrategas y logísticos trabaja para hacer que cada campaña sea un éxito.",
+    title: "Innovación constante",
+    text: "Usamos tecnología y creatividad para impactar.",
+  },
+  {
+    title: "Resultados medibles",
+    text: "Analizamos el impacto para optimizar el retorno de inversión.",
   },
 ];
 

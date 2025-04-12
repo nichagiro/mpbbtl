@@ -12,17 +12,16 @@ import { services } from "@/db/services";
 import getDataHelper from "@/helper/getDataHelper";
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export default async function Servicios({ params }: PageProps) {
   const { slug } = await params;
-  console.log("🚀 ~ Servicios ~ slug:", slug)
   const { title, description } = getDataHelper(services, "slug", slug);
 
   const menuList = services.map((service) => ({
     name: service.title,
-    url: service.link,
+    url: "/servicios/" + service.slug,
   }));
 
   return (

@@ -16,7 +16,7 @@ const OurBenefits = () => {
             <ul className="services-details__benefit__lists list-unstyled">
               <li><span className="fa fa-check-circle"></span>Experiencia comprobada en campañas de alto impacto.</li>
               <li><span className="fa fa-check-circle"></span>Cobertura móvil, visual y sonora en múltiples canales.</li>
-              <li><span className="fa fa-check-circle"></span>Personal capacitado y estructuras listas para cualquier desafí</li>
+              <li><span className="fa fa-check-circle"></span>Personal capacitado y estructuras listas para cualquier desafío</li>
               <li><span className="fa fa-check-circle"></span>Producción, logística y creatividad en un solo lugar.</li>
             </ul>
           </div>

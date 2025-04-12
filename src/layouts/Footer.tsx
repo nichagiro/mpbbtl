@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="main-footer__about">
               <p className="footer-widget__text">Comencemos a trabajar juntos</p>
-              <a href="mailto:help@company.com">{process.env.NEXT_PUBLIC_EMAIL}</a>
+              <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>{process.env.NEXT_PUBLIC_EMAIL}</a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">

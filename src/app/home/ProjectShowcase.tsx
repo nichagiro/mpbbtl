@@ -42,8 +42,8 @@ const ProjectShowcase = () => {
       <div className="container">
         <div className="section-title text-center">
           <SectionTitle
-            tagline="Explora nuestros proyectos más recientes"
-            title="Cada campaña es una oportunidad para transformar espacios y conectar marcas con su público." />
+            tagline="Experiencias que dejaron huella"
+            title="Casos de éxito." />
         </div>
         <SliderInfoCard items={projects} />
       </div>

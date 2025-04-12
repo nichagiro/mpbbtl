@@ -47,7 +47,6 @@ export default function RootLayout({
         <Whatsapp />
         <ScrollTop />
 
-        <ScriptRunner />
 
         <Script src="/js/jquery-3.5.1.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.bundle.min.js" />
@@ -68,6 +67,8 @@ export default function RootLayout({
         <Script src="/js/wow.js" />
         <Script src="/js/isotope.js" />
         <Script src="/js/countdown.min.js" />
+        
+        <ScriptRunner />
       </body>
     </html>
   );

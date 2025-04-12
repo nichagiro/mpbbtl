@@ -22,7 +22,7 @@ const Services = () => {
                 icon={service.icon}
                 title={service.title}
                 description={service.shortDescription}
-                link={service.link}
+                link={"/servicios/" + service.slug}
                 image={service.smallImage}
               />
             </div>

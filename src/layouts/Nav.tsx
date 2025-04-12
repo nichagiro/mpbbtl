@@ -18,19 +18,16 @@ const Nav = () => {
             <div className="main-menu__nav">
               <ul className="main-menu__list one-page-scroll-menu">
                 <li key="home" className="scrollToLink">
-                  <Link href="/#inicio">Inicio</Link>
+                  <Link href="/#inicio">Home</Link>
                 </li>
                 <li key="about" className="scrollToLink">
                   <Link href="/#sobre-nosotros">Nosotros</Link>
                 </li>
                 <li key="services" className="scrollToLink">
-                  <Link href="/#servicios">Servicios</Link>
-                </li>
-                <li key="why-choose" className="scrollToLink">
-                  <Link href="/#porque-escogernos">Marketing</Link>
+                  <Link href="/#servicios">Soluciones</Link>
                 </li>
                 <li key="portfolio" className="scrollToLink">
-                  <Link href="/#portafolio">Portafolio</Link>
+                  <Link href="/#portafolio">Proyectos</Link>
                 </li>
                 <li key="contact" className="scrollToLink">
                   <Link href="/#contacto">Contacto</Link>
@@ -63,7 +60,7 @@ const Nav = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:needhelp@packageName__.com">
+                <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
                   {process.env.NEXT_PUBLIC_EMAIL}
                 </a>
               </li>
