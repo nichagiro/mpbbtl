@@ -1,4 +1,3 @@
-// app/components/ScriptRunner.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -8,13 +7,13 @@ export default function ScriptRunner() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const existing = document.querySelector('script[src="/js/ogency.js"]');
+    const existing = document.querySelector('script[src="/utils/ogency.js"]');
     if (existing) {
       existing.remove();
     }
 
     const script = document.createElement("script");
-    script.src = "/js/ogency.js";
+    script.src = "/utils/ogency.js";
     script.async = true;
     document.body.appendChild(script);
 

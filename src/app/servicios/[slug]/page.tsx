@@ -11,8 +11,47 @@ import Picture from "@/components/Picture";
 import { services } from "@/db/services";
 import getDataHelper from "@/helper/getDataHelper";
 
+import type { Metadata } from "next";
 interface PageProps {
   params: Promise<{ slug: string }>
+}
+
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const { title, description } = getDataHelper(services, "slug", slug);
+
+  const fullTitle = `${title} | Servicios - MPM Marketing Experiencial`;
+  const url = `https://mpmbtl.com/servicios/${slug}`;
+  const image = `https://mpmbtl.com/images/service/service-detail.jpg`;
+
+  return {
+    title: fullTitle,
+    description,
+    openGraph: {
+      title: fullTitle,
+      description,
+      url,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      title: fullTitle,
+      description,
+      images: [image],
+      card: "summary_large_image"
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
 }
 
 export default async function Servicios({ params }: PageProps) {
@@ -55,7 +94,6 @@ export default async function Servicios({ params }: PageProps) {
   );
 }
 
-// generateStaticParams también necesita ser async si la usas en rutas estáticas
 export async function generateStaticParams() {
   return services.map((service) => ({
     slug: service.slug,

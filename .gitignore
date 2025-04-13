@@ -41,7 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 
-public
+public/images
+public/js
 .firebase/
 
 # Archivos temporales o de configuración local
