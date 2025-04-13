@@ -17,10 +17,10 @@ const WhyChooseUs = () => {
           <div className="col-lg-7">
             <div className="why-choose__image">
               <div className="why-choose__image__shape wow fadeIn animated" data-wow-delay="200ms">
-                <Picture src="assets/images/resources/why-choose-1-1.png" alt="ogency" />
+                <Picture src="/images/resources/why-choose-1-1.png" alt="ogency" />
               </div>
               <div className="why-choose__image__author wow fadeInRight animated" data-wow-delay="300ms">
-                <Picture src="assets/images/resources/why-choose-1-2.jpg" alt="ogency" />
+                <Picture src="/images/resources/why-choose-1-2.jpg" alt="ogency" />
               </div>
               <div className="video-one__banner__curved-circle-box wow fadeInUp animated" data-wow-delay="400ms" >
                 <a href="https://www.youtube.com/watch?v=9KIcoMCBUzM" className="video-popup">
