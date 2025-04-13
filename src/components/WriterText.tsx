@@ -13,11 +13,7 @@ const WriterText: React.FC<TypewriterProps> = ({ staticText = "", words = [], pe
   return (
     <>
       {staticText}
-      <span
-        className="typewrite"
-        data-period={period}
-        data-type={data}
-      />
+      <span className="typewrite" data-period={period} data-type={data} />
     </>
   );
 };

@@ -9801,8 +9801,7 @@ h6 {
   position: relative;
   font-size: 16px;
   line-height: 30px;
-  padding-left: 26px;
-  margin-bottom: 6px;
+  padding-left: 1rem;
 }
 
 .services-details__benefit__lists li span {

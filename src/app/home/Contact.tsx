@@ -1,9 +1,13 @@
 "use client";
 
+// ui
 import Button from "@/components/Button";
 import Input from "@/components/Input";
+import Picture from "@/components/Picture";
 import SectionTitle from "@/components/SectionTitle";
 import Textarea from "@/components/Textarea";
+
+// hooks
 import { useState } from "react";
 
 const ContactSection: React.FC = () => {
@@ -15,8 +19,6 @@ const ContactSection: React.FC = () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    setSubmitted(true)
-    return
     fetch("https://api.emailjs.com/api/v1.0/email/send", {
       method: "POST",
       headers: {
@@ -34,6 +36,7 @@ const ContactSection: React.FC = () => {
       });
 
     form.reset();
+    setSubmitted(true);
   }
 
   return (
@@ -66,7 +69,7 @@ const ContactSection: React.FC = () => {
                     <div className="col-md-12">
                       <Textarea name="message" placeholder="Mensaje" required />
                       <div className="contact-one__btn-box pt-1">
-                        {<Button type="submit">Enviar</Button>}
+                        {!submitted && <Button type="submit">Enviar</Button>}
                       </div>
                     </div>
                   </div>
@@ -83,10 +86,7 @@ const ContactSection: React.FC = () => {
           <div className="col-lg-6">
             <div className="ogency-stretch-element-inside-column">
               <div className="ogency-stretch__image wow slideInRight animated" data-wow-delay="400ms">
-                <picture>
-                  <source srcSet="/images/resources/contact-1.jpg" />
-                  <img src="/images/resources/contact-1.jpg" alt="ogency" width={890} height={763} />
-                </picture>
+                <Picture src="/images/resources/contact-1.jpg" alt="ogency" width={890} height={763} />
                 <div className="ogency-stretch__image__angle-top"></div>
                 <div className="ogency-stretch__image__angle-middle"></div>
                 <div className="ogency-stretch__image__angle-bottom"></div>

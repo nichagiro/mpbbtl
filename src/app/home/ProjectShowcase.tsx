@@ -10,9 +10,7 @@ const ProjectShowcase = () => {
       <section className="project-two" id="portafolio">
         <div className="container">
           <div className="section-title text-center">
-            <SectionTitle
-              tagline="Experiencias que dejaron huella"
-              title="Casos de éxito." />
+            <SectionTitle tagline="Experiencias que dejaron huella" title="Casos de éxito." />
           </div>
           <SliderInfoCard items={projects} />
         </div>

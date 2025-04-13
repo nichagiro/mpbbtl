@@ -83,11 +83,11 @@ export default async function Servicios({ params }: PageProps) {
                 <h3 className="services-details__content__title">{title}</h3>
                 <p className="services-details__content__text">{description}</p>
                 <WhyChoose />
-                <Skills />
-                <OurBenefits />
+                <Skills />             
               </div>
             </div>
           </div>
+          <OurBenefits />
         </div>
       </section>
     </>
