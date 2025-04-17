@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Si NO es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Entonces redirige a la versión .html
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [L]

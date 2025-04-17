@@ -2,7 +2,7 @@ export const services = [
   {
     id: "1",
     slug: "publicidad-movil-y-outdoor-experience",
-    title: "Publicidad Móvil Y Outdoor Experience",
+    title: "Publicidad móvil y outdoor experience",
     smallImage: "/images/service/services-2-1.jpg",
     icon: "icon-color-sample",
     listContent: [

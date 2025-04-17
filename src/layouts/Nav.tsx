@@ -26,7 +26,8 @@ const Nav = () => {
                 <li key="services" className="scrollToLink">
                   <Link href="/#servicios">Soluciones</Link>
                 </li>
-                <li key="portfolio" className="scrollToLink">
+                {/* ocluto mientras */}
+                <li key="portfolio" className="scrollToLink d-none">
                   <Link href="/#portafolio">Proyectos</Link>
                 </li>
                 <li key="contact" className="scrollToLink">

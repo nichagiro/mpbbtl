@@ -7,7 +7,8 @@ const ProjectShowcase = () => {
 
   return (
     <>
-      <section className="project-two" id="portafolio">
+    {/* !! oculto los proyectos */}
+      <section className="project-two d-none" id="portafolio"> 
         <div className="container">
           <div className="section-title text-center">
             <SectionTitle tagline="Experiencias que dejaron huella" title="Casos de éxito." />
@@ -15,9 +16,11 @@ const ProjectShowcase = () => {
           <SliderInfoCard items={projects} />
         </div>
       </section>
-      <div className="client-carousel client-carousel--without-title">
+      <div className="client-carousel client-carousel--without-title pt-5">
         <div className="container">
-          <h5 className="client-carousel__tilte"><span>1K+ Brands Trust Us</span></h5>
+          <div className="section-title text-center">
+            <SectionTitle tagline="Marcas que confían en nosotros" title="Hemos trabajado con grandes marcas para crear experiencias inolvidables." />
+          </div>
           <SliderBrands items={clients} />
         </div>
       </div>
