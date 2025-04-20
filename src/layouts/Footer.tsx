@@ -1,15 +1,16 @@
 import Socials from '@/components/Socials';
+import { CONTACT_NUMBER, EMAIL } from '@/db/general';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="main-footer" style={{ backgroundImage: 'url(/images/backgrounds/footer-bg-1.png)' }}>
+    <footer className="main-footer" style={{ backgroundImage: 'url(/images/backgrounds/footer-bg-1.webp)' }}>
       <div className="container">
         <div className="main-footer__top wow fadeInUp animated" data-wow-delay="100ms">
           <Link href="/" className="main-footer__logo">
             <picture>
-              <source srcSet="/images/logo-light.png" />
-              <img src="/images/logo-light.png" alt="ogency" />
+              <source srcSet="/images/logo-light.webp" />
+              <img src="/images/logo-light.webp" alt="ogency" />
             </picture>
           </Link>
           <div className="main-footer__social">
@@ -20,7 +21,7 @@ const Footer = () => {
           <div className="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="main-footer__about">
               <p className="footer-widget__text">Comencemos a trabajar juntos</p>
-              <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>{process.env.NEXT_PUBLIC_EMAIL}</a>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">
@@ -36,7 +37,7 @@ const Footer = () => {
                     Cra. 18 #10-31, COMUNA 3, Cali, Valle del Cauca
                   </a>
                 </li>
-                <li>{process.env.NEXT_PUBLIC_CONTACT_NUMBER}</li>
+                <li>{CONTACT_NUMBER}</li>
                 <li>Lunes a viernes - 8am - 6pm</li>
                 <li>Sábados : 8am - 12pm</li>
               </ul>

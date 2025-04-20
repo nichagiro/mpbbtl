@@ -3,7 +3,7 @@ export const services = [
     id: "1",
     slug: "publicidad-movil-y-outdoor-experience",
     title: "Publicidad móvil y outdoor experience",
-    smallImage: "/images/service/services-2-1.jpg",
+    smallImage: "/images/service/services-2-1.webp",
     icon: "icon-color-sample",
     listContent: [
       "Carro valla con estrategias optimizadas para mayor alcance.",
@@ -18,7 +18,7 @@ export const services = [
     id: "4",
     slug: "consultoria-y-diseno-de-estrategias-experienciales",
     title: "Consultoría y diseño de estrategias experienciales",
-    smallImage: "/images/service/services-2-6.jpg",
+    smallImage: "/images/service/services-2-6.webp",
     icon: "icon-pen-tool",
     shortDescription: "Desde vallas hasta material promocional, aseguramos visibilidad con calidad.",
     listContent: [
@@ -33,7 +33,7 @@ export const services = [
     id: "5",
     slug: "activaciones-de-marca-y-experiencias-en-vivo",
     title: "Activaciones de marca y experiencias en vivo",
-    smallImage: "/images/service/services-2-5.jpg",
+    smallImage: "/images/service/services-2-5.webp",
     icon: "icon-award",
     shortDescription: "Llevamos tu marca más allá de la publicidad tradicional. Creamos experiencias memorables que generan emociones.",
     listContent: [

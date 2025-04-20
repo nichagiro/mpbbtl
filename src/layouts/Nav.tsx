@@ -1,4 +1,5 @@
 import Socials from "@/components/Socials"
+import { CONTACT_NUMBER, EMAIL } from "@/db/general"
 import Link from "next/link"
 
 const Nav = () => {
@@ -10,8 +11,8 @@ const Nav = () => {
             <div className="main-menu__logo">
               <Link href="/">
                 <picture>
-                  <source srcSet="/images/logo-light.png" type="image/png" />
-                  <img src="/images/logo-light.png" width="266" height="100" alt="Ogency" />
+                  <source srcSet="/images/logo-light.webp" />
+                  <img src="/images/logo-light.webp" width="266" height="100" alt="Ogency" />
                 </picture>
               </Link>
             </div>
@@ -52,8 +53,8 @@ const Nav = () => {
             <div className="logo-box">
               <Link href="/" title="mpm logo">
                 <picture>
-                  <source srcSet="/images/logo-light.png" type="image/png" />
-                  <img src="/images/logo-light.png" width="266" height="100" alt="Ogency" />
+                  <source srcSet="/images/logo-light.webp" type="image/png" />
+                  <img src="/images/logo-light.webp" width="266" height="100" alt="Ogency" />
                 </picture>
               </Link>
             </div>
@@ -61,13 +62,13 @@ const Nav = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fas fa-envelope"></i>
-                <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
-                  {process.env.NEXT_PUBLIC_EMAIL}
+                <a href={`mailto:${EMAIL}`}>
+                  {EMAIL}
                 </a>
               </li>
               <li>
                 <i className="icon-phone-call"></i>
-                <a href="tel:3503442703">{process.env.NEXT_PUBLIC_CONTACT_NUMBER}</a>
+                <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>{CONTACT_NUMBER}</a>
               </li>
             </ul>
             <div className="mobile-nav__social">

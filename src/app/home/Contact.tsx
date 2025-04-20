@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
     <section className="contact-one" id="contacto">
       <div
         className="contact-one__bg"
-        style={{ backgroundImage: "url(/images/backgrounds/contact-bg-1.png)" }}
+        style={{ backgroundImage: "url(/images/backgrounds/contact-bg-1.webp)" }}
       >
       </div>
       <div className="container">
@@ -86,7 +86,7 @@ const ContactSection: React.FC = () => {
           <div className="col-lg-6">
             <div className="ogency-stretch-element-inside-column">
               <div className="ogency-stretch__image wow slideInRight animated" data-wow-delay="400ms">
-                <Picture src="/images/resources/contact-1.jpg" alt="ogency" width={890} height={763} />
+                <Picture src="/images/resources/contact-1.webp" alt="ogency" width={890} height={763} />
                 <div className="ogency-stretch__image__angle-top"></div>
                 <div className="ogency-stretch__image__angle-middle"></div>
                 <div className="ogency-stretch__image__angle-bottom"></div>

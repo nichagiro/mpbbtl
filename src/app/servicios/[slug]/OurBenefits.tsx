@@ -6,7 +6,7 @@ const OurBenefits = () => {
       <div className="row">
         <div className="col-lg-4 col-12">
           <div className="services-details__benefit__img">
-            <Picture src="/images/service/services-details-benefit-img.jpg" alt="ogency" />
+            <Picture src="/images/service/services-details-benefit-img.webp" alt="ogency" />
           </div>
         </div>
         <div className="col-lg-8 col-12">

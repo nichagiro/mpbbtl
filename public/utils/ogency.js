@@ -568,11 +568,11 @@
     var e = document.querySelector(".scroll-top path"),
       t = e.getTotalLength();
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    (e.style.transition = e.style.WebkitTransition = "none"),
+    (e.style.transition = e.style.webpkitTransition = "none"),
       (e.style.strokeDasharray = t + " " + t),
       (e.style.strokeDashoffset = t),
       e.getBoundingClientRect(),
-      (e.style.transition = e.style.WebkitTransition = "stroke-dashoffset 10ms linear");
+      (e.style.transition = e.style.webpkitTransition = "stroke-dashoffset 10ms linear");
     var o = function () {
       var o = $(window).scrollTop(),
         r = $(document).height() - $(window).height(),

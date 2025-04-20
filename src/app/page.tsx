@@ -6,34 +6,46 @@ import WhyChooseUs from "./home/WhyChooseUs";
 import SliderText from "@/components/SliderText";
 import ProjectShowcase from "./home/ProjectShowcase";
 import ContactSection from "./home/Contact";
-
 import { Metadata } from "next";
 
 const title = "MPM Marketing Experiencial | Estrategias que conectan marcas y personas"
-const description = "MPM Marketing Experiencial crea estrategias únicas que generan conexión real entre marcas y consumidores. Combinamos creatividad, tecnología y ejecución impecable para campañas memorables y de alto impacto."
-const url = "https://mpmbtl.com/"
-const images = "https://mpmbtl.com/"
+const description = "MPM Marketing Experiencial crea estrategias únicas que generan conexión real entre marcas y consumidores.Combinamos creatividad, tecnología y ejecución impecable para campañas memorables y de alto impacto."
+const url = "https://mpmbtl.com"
+
+const images = {
+  url: "https://mpmbtl.com/images/backgrounds/hero-2-2.webp",
+  width: 1472,
+  height: 832,
+  alt: "MPM Marketing Experiencial - Estrategias de marketing BTL y conexión emocional entre marcas y consumidores"
+}
 
 export const metadata: Metadata = {
   title,
   description,
   openGraph: {
     title,
-    description,
+    siteName: "MPM Marketing Experiencial",
+    locale: "es_CO",
+    type: "website",
+    countryName: "Colombia",
     url,
-    images,
-    type: "website"
+    emails: "info@mpmbtl.com",
+    phoneNumbers: "573001102276",
+    description,
+    images
   },
   twitter: {
+    site: "@Nicolas63783814",
+    creator: "@Nicolas63783814",
     title,
     description,
     images,
     card: "summary_large_image"
   },
   alternates: {
-    canonical: url,
+    canonical: url
   },
-};
+}
 
 export default function Home() {
   return (

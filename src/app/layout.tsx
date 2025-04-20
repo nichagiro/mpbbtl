@@ -10,6 +10,7 @@ import Whatsapp from "@/components/Whatsapp";
 import Loading from "@/components/Loading";
 import ScrollTop from "@/components/ScrollTop";
 import ScriptRunner from "./ScriptRunner";
+import { CONTACT_NUMBER } from "@/db/general";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -17,46 +18,49 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
-const getSocials = {
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "Overweb",
-  "url": "https://overweb.com.co/",
-  "address": "Cra. 4b & Cl. 46 Bis",
-  "sameAs": [
-    "https://www.facebook.com/mpmbtlsas/",
-    "https://www.instagram.com/mpmbtl",
-    "https://es.pinterest.com/mpmbtl/",
-  ]
-}
-
 export const metadata: Metadata = {
-  openGraph: {
-    siteName: "MPM Marketing Experiencial",
-    locale: "es_CO",
-    type: "website",
-    countryName: "Colombia",
-    url: "https://mpmbtl.com/",
-    emails: "info.burbano@mpmbtl.com",
-    phoneNumbers: "573001102276",
-    title: "MPM Marketing Experiencial",
-    description: "MPM Marketing Experiencial es una agencia que se especializa en crear experiencias memorables para marcas y consumidores.",
-  },
-  twitter: {
-    site: "@Nicolas63783814",
-    creator: "@Nicolas63783814",
-    card: "summary",
-  },
-  authors: {
+  keywords: ["marketing experiencial", "publicidad BTL", "activaciones de marca", "eventos corporativos", "estrategias de marketing"],
+  authors: [{
     name: "overweb",
-    url: "https://overweb.com.co/"
-  },
+    url: "https://overweb.com.co/",
+  }],
   generator: "Next.js",
   robots: {
-    index: false,
-    follow: false
+    index: true,
+    follow: true
   }
 }
+
+const structuredData = {
+  __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MPM Marketing Experiencial",
+    "url": "https://mpmbtl.com",
+    "logo": "https://mpmbtl.com/logo-light.webp",
+    "description": "Agencia de marketing experiencial en Colombia. Creamos estrategias memorables, activaciones de marca y publicidad móvil que conectan con tu audiencia.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cra. 18 #10-31",
+      "addressLocality": "Cali",
+      "addressRegion": "Valle del Cauca",
+      "addressCountry": "CO"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": CONTACT_NUMBER,
+      "contactType": "customer service",
+      "areaServed": "CO",
+      "availableLanguage": ["Spanish"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/mpmbtlsas/",
+      "https://www.instagram.com/mpmbtl",
+      "https://es.pinterest.com/mpmbtl/"
+    ]
+  })
+};
+
 
 export default function RootLayout({
   children,
@@ -66,8 +70,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link href="/images/logo-light.png" rel="icon" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSocials) }} />
+        <link href="/favicon.png" rel="icon" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={structuredData} />
       </head>
 
       <body className={`${plusJakartaSans.className} custom-cursor`}>

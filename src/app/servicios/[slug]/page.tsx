@@ -6,16 +6,17 @@ import OurBenefits from "./OurBenefits";
 import WhyChoose from "./WhyChoose";
 import Skills from "./Skills";
 import Picture from "@/components/Picture";
+import Head from "next/head";
 
 // db, helper, types
 import { services } from "@/db/services";
 import getDataHelper from "@/helper/getDataHelper";
 
 import type { Metadata } from "next";
-interface PageProps {
-  params: Promise<{ slug: string }>
-}
 
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -23,7 +24,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const fullTitle = `${title} | Servicios - MPM Marketing Experiencial`;
   const url = `https://mpmbtl.com/servicios/${slug}`;
-  const image = `https://mpmbtl.com/images/service/service-detail.jpg`;
+
+  const images = {
+    url: "https://mpmbtl.com/images/service/service-detail.webp",
+    width: 770,
+    height: 437,
+    alt: title,
+  };
 
   return {
     title: fullTitle,
@@ -32,21 +39,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: fullTitle,
       description,
       url,
-      images: [
-        {
-          url: image,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+      images,
       type: "article",
     },
     twitter: {
       title: fullTitle,
       description,
-      images: [image],
-      card: "summary_large_image"
+      images,
+      card: "summary_large_image",
     },
     alternates: {
       canonical: url,
@@ -63,8 +63,30 @@ export default async function Servicios({ params }: PageProps) {
     url: "/servicios/" + service.slug,
   }));
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description,
+    provider: {
+      "@type": "Organization",
+      name: "MPM Marketing Experiencial",
+      url: "https://mpmbtl.com",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Colombia",
+    },
+    serviceType: title,
+    url: `https://mpmbtl.com/servicios/${slug}`,
+  };
+
   return (
     <>
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </Head>
+
       <BackgroundSection title={title} />
       <section className="services-details">
         <div className="container">
@@ -78,12 +100,12 @@ export default async function Servicios({ params }: PageProps) {
             <div className="col-xl-8 col-lg-7 wow fadeInUp animated" data-wow-delay="400ms">
               <div className="services-details__content">
                 <div className="services-details__thumb">
-                  <Picture src="/images/service/service-detail.jpg" />
+                  <Picture src="/images/service/service-detail.webp" />
                 </div>
                 <h3 className="services-details__content__title">{title}</h3>
                 <p className="services-details__content__text">{description}</p>
                 <WhyChoose />
-                <Skills />             
+                <Skills />
               </div>
             </div>
           </div>
