@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import Picture from "./Picture";
 
 type CardInfo = {
   image: string;
@@ -37,10 +38,7 @@ const SliderInfoCard: React.FC<SliderInfoCardProps> = ({ items }) => {
       {items.map((item, index) => (
         <div className="project-two__item" key={index}>
           <div className="project-two__item__image">
-            <picture>
-              <source srcSet={item.image} />
-              <img src={item.image} alt={item.title} title={item.title} />
-            </picture>
+            <Picture src={item.image} alt={item.title} title={item.title} />
           </div>
           <div className="project-two__item__content">
             <p className="project-two__item__content__cats">

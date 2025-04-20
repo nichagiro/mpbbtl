@@ -6,7 +6,7 @@ const ServiceConact = ({ nameService }: { nameService: string }) => {
     <div className="services-details__banner">
       <div className="services-details__banner__shape"></div>
       <div className="services-details__banner__image">
-        <Picture src="/images/resources/banner-author.webp" alt="ogency" />
+        <Picture src="/images/resources/banner-author.webp" alt="contacto mpm marketing digital" />
       </div>
       <div className="services-details__banner__icon"><span className="icon-marketing"></span></div>
       <h3 className="services-details__banner__title">

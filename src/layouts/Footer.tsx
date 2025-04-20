@@ -1,3 +1,4 @@
+import Picture from '@/components/Picture';
 import Socials from '@/components/Socials';
 import { CONTACT_NUMBER, EMAIL } from '@/db/general';
 import Link from 'next/link';
@@ -8,10 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="main-footer__top wow fadeInUp animated" data-wow-delay="100ms">
           <Link href="/" className="main-footer__logo">
-            <picture>
-              <source srcSet="/images/logo-light.webp" />
-              <img src="/images/logo-light.webp" alt="ogency" />
-            </picture>
+            <Picture src="/images/logo-light.webp" alt="logo mpm marketing digital" />
           </Link>
           <div className="main-footer__social">
             <Socials />

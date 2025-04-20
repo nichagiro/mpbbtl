@@ -1,3 +1,4 @@
+import Picture from "@/components/Picture"
 import Socials from "@/components/Socials"
 import { CONTACT_NUMBER, EMAIL } from "@/db/general"
 import Link from "next/link"
@@ -10,10 +11,7 @@ const Nav = () => {
           <div className="container-fluid">
             <div className="main-menu__logo">
               <Link href="/">
-                <picture>
-                  <source srcSet="/images/logo-light.webp" />
-                  <img src="/images/logo-light.webp" width="266" height="100" alt="Ogency" />
-                </picture>
+                <Picture src="/images/logo-light.webp" width="266" height="100" alt="logo mpm marketing digital" />
               </Link>
             </div>
             <div className="main-menu__nav">
@@ -52,10 +50,7 @@ const Nav = () => {
             <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
             <div className="logo-box">
               <Link href="/" title="mpm logo">
-                <picture>
-                  <source srcSet="/images/logo-light.webp" type="image/png" />
-                  <img src="/images/logo-light.webp" width="266" height="100" alt="Ogency" />
-                </picture>
+                <Picture src="/images/logo-light.webp" width="266" height="100" alt="logo mpm btl" />
               </Link>
             </div>
             <div className="mobile-nav__container"></div>
