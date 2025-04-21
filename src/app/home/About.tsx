@@ -43,6 +43,6 @@ export default About
 
 
 const counterData = [
-  { count: 2, data: "k", title: "Projectos Completados" },
+  { count: 2, data: "k", title: "Proyectos Completados" },
   { count: 1, data: "k", title: "Clientes Satisfechos" },
 ];
