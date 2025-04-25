@@ -1,22 +1,30 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Montserrat, Sarabun } from 'next/font/google'
 import "./globals.css";
 
 // ui
-import Script from "next/script";
 import Footer from "@/layouts/Footer";
 import Nav from "@/layouts/Nav";
 import Whatsapp from "@/components/Whatsapp";
 import Loading from "@/components/Loading";
 import ScrollTop from "@/components/ScrollTop";
-import ScriptRunner from "./ScriptRunner";
-import { CONTACT_NUMBER } from "@/db/general";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+// others
+import Script from "next/script";
+import ScriptRunner from "./ScriptRunner";
+
+
+const montserrat = Montserrat({
+  weight: ['700'], // Bold
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  display: 'swap',
-});
+  variable: '--font-montserrat',
+})
+
+const sarabun = Sarabun({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-sarabun',
+})
 
 export const metadata: Metadata = {
   keywords: ["marketing experiencial", "publicidad BTL", "activaciones de marca", "eventos corporativos", "estrategias de marketing"],
@@ -31,37 +39,6 @@ export const metadata: Metadata = {
   }
 }
 
-const structuredData = {
-  __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "MPM Marketing Experiencial",
-    "url": "https://mpmbtl.com",
-    "logo": "https://mpmbtl.com/logo-light.webp",
-    "description": "Agencia de marketing experiencial en Colombia. Creamos estrategias memorables, activaciones de marca y publicidad móvil que conectan con tu audiencia.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Cra. 18 #10-31",
-      "addressLocality": "Cali",
-      "addressRegion": "Valle del Cauca",
-      "addressCountry": "CO"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": CONTACT_NUMBER,
-      "contactType": "customer service",
-      "areaServed": "CO",
-      "availableLanguage": ["Spanish"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/mpmbtlsas/",
-      "https://www.instagram.com/mpmbtl",
-      "https://es.pinterest.com/mpmbtl/"
-    ]
-  })
-};
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,10 +48,8 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <link href="/favicon.png" rel="icon" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={structuredData} />
       </head>
-
-      <body className={`${plusJakartaSans.className} custom-cursor`}>
+      <body className={`${montserrat.variable} ${sarabun.variable} custom-cursor`}>
         <Loading />
 
         <div className="custom-cursor__cursor"></div>

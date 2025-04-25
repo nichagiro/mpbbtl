@@ -10,7 +10,7 @@ const Services = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-title text-center">
-              <SectionTitle tagline="Lo que ofrecemos" title="Servicios diseñados para impactar" />
+              <SectionTitle tagline="Soluciones" title="Experiencias únicas que fortalecen la conexión con tu audiencia" />
             </div>
           </div>
         </div>
@@ -19,10 +19,10 @@ const Services = () => {
             <div key={index} className="col-lg-4 col-md-6">
               <InfoCard
                 index={index}
-                icon={service.icon}
+                imageIcon={service.imageIcon}
                 title={service.title}
                 description={service.shortDescription}
-                link={"/servicios/" + service.slug}
+                link={"/soluciones"}
                 image={service.smallImage}
               />
             </div>

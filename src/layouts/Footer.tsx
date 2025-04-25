@@ -19,25 +19,17 @@ const Footer = () => {
           <div className="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="main-footer__about">
               <p className="footer-widget__text">Comencemos a trabajar juntos</p>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a> <br />
+              <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>{CONTACT_NUMBER}</a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">
             <div className="main-footer__navmenu">
               <ul>
-                <li>
-                  <a
-                    href='https://www.google.com/maps?ll=3.440398,-76.531337&z=16&t=m&hl=es&gl=US&mapclient=embed&q=Cra.+18+%23+10-31+Bretana+Cali,+Valle+del+Cauca'
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title='Ubicación'
-                  >
-                    Cra. 18 #10-31, COMUNA 3, Cali, Valle del Cauca
-                  </a>
-                </li>
-                <li>{CONTACT_NUMBER}</li>
-                <li>Lunes a viernes - 8am - 6pm</li>
-                <li>Sábados : 8am - 12pm</li>
+                <li>Cali, Colombia</li>
+                <li>Horario de atención</li>
+                <li>Lunes a viernes de 8:00 a.m. - 6:00 p.m.</li>
+                <li>Sábados de 8:00 a.m - 12:00 m.</li>
               </ul>
             </div>
           </div>

@@ -7,7 +7,7 @@ const HeroBanner = () => {
       <div className="container">
         <div className="hero-banner__content">
           <h2 className="hero-banner__content__title wow fadeInUp animated" data-wow-delay="200ms">
-            Marketing con<span>*</span>
+            Experiencias con<span>*</span>
           </h2>
           <div className="hero-banner__bottom wow fadeInUp animated" data-wow-delay="400ms">
             <h2 className="hero-banner__bottom__title">

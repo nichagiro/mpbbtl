@@ -8,7 +8,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="about-two__left">
-              <SectionTitle tagline="Publicidad que deja huella" title="Sobre Nosotros" />
+              <SectionTitle tagline="" title="Sobre Nosotros" />
               <p className="about-two__left--text w-75">
                 “La clave del marketing no es solo vender, sino crear momentos inolvidables que conecten emocionalmente con las personas.”
               </p>

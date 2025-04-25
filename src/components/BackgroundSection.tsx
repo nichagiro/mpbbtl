@@ -1,23 +1,37 @@
 import Link from 'next/link';
 import { FC } from 'react'
 
-interface BackgroundSectionProps {
-  title: string;
+const defaultLink = {
+  url: "/",
+  title: "Home"
 }
 
-const BackgroundSection: FC<BackgroundSectionProps> = ({ title }) => {
+interface Links {
+  url: string
+  title: string
+}
+
+interface BackgroundSectionProps {
+  title: string;
+  links: Links[]
+}
+
+const BackgroundSection: FC<BackgroundSectionProps> = ({ title, links = [] }) => {
   return (
     <section className="page-header">
       <div className="page-header__bg"></div>
       <div className="page-header__overlay"></div>
       <div className="container">
         <ul className="page-header__breadcrumb list-unstyled">
-          <li>
-            <Link href="/" title='inicio'>Home</Link>
-          </li>
-          <li>
-            <Link href={"/servicios"} title='servicios'>Servicios</Link>
-          </li>
+          {
+            [defaultLink, ...links].map(item => (
+              <li key={item.title}>
+                <Link href={item.url} title={item.title}>
+                  {item.title}
+                </Link>
+              </li>
+            ))
+          }
         </ul>
         <h2 className="page-header__title">{title}</h2>
       </div>

@@ -19,7 +19,7 @@ const ProjectShowcase = () => {
       <div className="client-carousel client-carousel--without-title pt-5">
         <div className="container">
           <div className="section-title text-center">
-            <SectionTitle tagline="Marcas que confían en nosotros" title="Hemos trabajado con grandes marcas para crear experiencias inolvidables." />
+            <SectionTitle tagline="Marcas que confían en nosotros" title="" />
           </div>
           <SliderBrands items={clients} />
         </div>

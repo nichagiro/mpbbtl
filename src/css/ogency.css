@@ -1379,7 +1379,7 @@
   outline: none;
   font-size: 14px;
   color: var(--ogency-color);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   display: block;
   font-weight: 500;
 }
@@ -1391,7 +1391,7 @@
   height: 188px;
   width: 100%;
   background-color: var(--ogency-black2);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 25px 30px 30px;
   border: none;
   outline: none;
@@ -1402,8 +1402,6 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-  --ogency-font: 'Plus Jakarta Sans', sans-serif;
-  --heading-font: 'Plus Jakarta Sans', sans-serif;
   --ogency-color: #5d5d5d;
   --ogency-color-rgb: 93, 93, 93;
   --ogency-base: #EF3E42;
@@ -1419,7 +1417,7 @@
 }
 
 body {
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   color: var(--ogency-color);
   font-size: 15px;
   line-height: 1.875;
@@ -1453,7 +1451,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--ogency-font);
+  font-family: var(--font-montserrat);
   color: var(--ogency-white);
   font-weight: 800;
 }
@@ -1526,7 +1524,7 @@ h6 {
   color: var(--ogency-white);
   font-size: 16px;
   font-weight: 800;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 16px 50px 17px;
   transition: 500ms;
   overflow: hidden;
@@ -7696,7 +7694,7 @@ h6 {
   outline: none;
   font-size: 14px;
   color: var(--ogency-color);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   display: block;
   font-weight: 500;
 }
@@ -7705,7 +7703,7 @@ h6 {
   position: relative;
   display: block;
   width: 100% !important;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
 }
 
 .contact-one__input-box .bootstrap-select>.dropdown-toggle::after {
@@ -7773,7 +7771,7 @@ h6 {
   height: 130px;
   width: 100%;
   background-color: var(--ogency-black);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 20px 30px 30px;
   border: none;
   outline: none;
@@ -7792,7 +7790,8 @@ h6 {
 .ogency-stretch__image {
   position: relative;
   margin-left: auto;
-  background-color: var(--ogency-black2);;
+  background-color: var(--ogency-black2);
+  ;
   max-width: 890px;
   height: 100%;
   overflow: hidden;
@@ -10103,7 +10102,7 @@ h6 {
   background-color: transparent;
   padding-left: 30px;
   padding-right: 30px;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   font-size: 14px;
   color: var(--ogency-color);
   border: 1px solid var(--ogency-black3);
@@ -10162,7 +10161,7 @@ h6 {
   line-height: 30px;
   border: none;
   outline: none;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 0;
   text-align: center;
   background-color: transparent;
@@ -10317,7 +10316,7 @@ h6 {
   position: relative;
   display: block;
   width: 340px !important;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
 }
 
 @media (max-width: 360px) {
@@ -10683,7 +10682,7 @@ h6 {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   color: var(--ogency-color);
   padding-left: 30px;
   outline: none;
@@ -10986,7 +10985,7 @@ h6 {
   outline: none;
   font-size: 14px;
   color: var(--ogency-color);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   display: block;
   font-weight: 500;
 }
@@ -10998,7 +10997,7 @@ h6 {
   height: 188px;
   width: 100%;
   background-color: var(--ogency-black2);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 25px 30px 30px;
   border: none;
   outline: none;
@@ -11146,7 +11145,7 @@ h6 {
   outline: none;
   font-size: 14px;
   color: var(--ogency-color);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   display: block;
   font-weight: 500;
   margin-right: 10px;
@@ -11340,7 +11339,7 @@ h6 {
   outline: none;
   font-size: 14px;
   color: var(--ogency-color);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   display: block;
   font-weight: 500;
 }
@@ -11349,7 +11348,7 @@ h6 {
   position: relative;
   display: block;
   width: 100% !important;
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
 }
 
 .checkout-page__input-box .bootstrap-select>.dropdown-toggle::after {
@@ -11417,7 +11416,7 @@ h6 {
   height: 113px;
   width: 100%;
   background-color: var(--ogency-black2);
-  font-family: var(--ogency-font);
+  font-family: var(--font-sarabun);
   padding: 20px 30px 30px;
   border: none;
   outline: none;

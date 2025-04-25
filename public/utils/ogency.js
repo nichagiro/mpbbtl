@@ -615,6 +615,7 @@
       var menuAnchor = $(".one-page-scroll-menu .scrollToLink").children("a");
       menuAnchor.each(function () {
         var sectionss = $(this).attr("href");
+        if (sectionss[1] !== "#") return
         const sections = sectionss.replace("/#", "#");
         $(sections).each(function () {
           if ($(this).offset().top <= windscroll + 100) {

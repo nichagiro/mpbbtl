@@ -1,7 +1,6 @@
 interface SectionTitleProps {
   tagline?: string;
   title?: string;
-  className?: string;
 }
 
 const SectionTitle = ({ tagline, title }: SectionTitleProps) => {

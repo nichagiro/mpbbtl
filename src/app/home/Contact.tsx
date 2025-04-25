@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-6 wow fadeInLeft animated" data-wow-delay="200ms">
             <div className="contact-one__left">
-              <SectionTitle tagline="Conéctate con nosotros" title="Agenda una reunión y empecemos a transformar la experiencia de tu marca." />
+              <SectionTitle tagline="Contáctanos" title="" />
               <div className="contact-one__form-box">
                 <form className="contact-one__form contact-form-validated" onSubmit={handleSubmit}>
                   <div className="row">

@@ -23,7 +23,7 @@ const Nav = () => {
                   <Link href="/#sobre-nosotros">Nosotros</Link>
                 </li>
                 <li key="services" className="scrollToLink">
-                  <Link href="/#servicios">Soluciones</Link>
+                  <Link href="/soluciones">Soluciones</Link>
                 </li>
                 {/* ocluto mientras */}
                 <li key="portfolio" className="scrollToLink d-none">
