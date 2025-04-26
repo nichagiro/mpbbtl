@@ -1,7 +1,7 @@
 import Picture from '@/components/Picture'
 import Link from 'next/link'
 
-const ServiceConact = ({ nameService }: { nameService: string }) => {
+const ServiceConact = () => {
   return (
     <div className="services-details__banner">
       <div className="services-details__banner__shape"></div>
@@ -10,7 +10,7 @@ const ServiceConact = ({ nameService }: { nameService: string }) => {
       </div>
       <div className="services-details__banner__icon"><span className="icon-marketing"></span></div>
       <h3 className="services-details__banner__title">
-        ¿Estas buscando servicio de {nameService}?
+        ¿Listo para darle a tu público una experiencia única?
       </h3>
       <Link className="ogency-btn" href="/#contacto">Contacto</Link>
     </div>

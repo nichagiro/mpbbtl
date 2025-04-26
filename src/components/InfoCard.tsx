@@ -21,7 +21,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, link, ind
         <div className="service-two__item__icon">
           {
             imageIcon
-              ? <Picture src={imageIcon} alt="icon mpm marketing digital" width={80} height={80} />
+              ? <Picture src={imageIcon} alt="icon mpm marketing digital" width={40} height={40} />
               : <span className={icon}></span>
           }
         </div>

@@ -237,6 +237,10 @@
   padding-right: 30px;
 }
 
+.line {
+  border-top: 1px solid RGBA(var(--ogency-white-rgb), 0.1);
+}
+
 /*--------------------------------------------------------------
 # Cards
 --------------------------------------------------------------*/
@@ -6882,9 +6886,7 @@ h6 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid RGBA(var(--ogency-white-rgb), 0.1);
-  padding-bottom: 60px;
-  margin-bottom: 88px;
+  margin-bottom: 1rem;
 }
 
 

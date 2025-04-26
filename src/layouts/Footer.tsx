@@ -7,14 +7,6 @@ const Footer = () => {
   return (
     <footer className="main-footer" style={{ backgroundImage: 'url(/images/backgrounds/footer-bg-1.webp)' }}>
       <div className="container">
-        <div className="main-footer__top wow fadeInUp animated" data-wow-delay="100ms">
-          <Link href="/" className="main-footer__logo">
-            <Picture src="/images/logo-light.webp" alt="logo mpm marketing digital" />
-          </Link>
-          <div className="main-footer__social">
-            <Socials />
-          </div>
-        </div>
         <div className="row">
           <div className="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div className="main-footer__about">
@@ -24,13 +16,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">
-            <div className="main-footer__navmenu">
+            <div className="main-footer__navmenu d-flex">
               <ul>
                 <li>Cali, Colombia</li>
                 <li>Horario de atención</li>
                 <li>Lunes a viernes de 8:00 a.m. - 6:00 p.m.</li>
                 <li>Sábados de 8:00 a.m - 12:00 m.</li>
               </ul>
+            </div>
+          </div>
+          <div className="main-footer__top line mt-5 pt-5 pb-5 wow fadeInUp animated" data-wow-delay="100ms">
+            <Link href="/" className="main-footer__logo">
+              <Picture src="/images/logo-light.webp" alt="logo mpm marketing digital" />
+            </Link>
+            <div className="main-footer__social">
+              <Socials />
             </div>
           </div>
         </div>

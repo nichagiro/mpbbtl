@@ -21,7 +21,7 @@ const Services = () => {
                 index={index}
                 imageIcon={service.imageIcon}
                 title={service.title}
-                description={service.shortDescription}
+                description={""}
                 link={"/soluciones"}
                 image={service.smallImage}
               />

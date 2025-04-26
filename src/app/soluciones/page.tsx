@@ -81,7 +81,7 @@ export default async function Servicios() {
           <div className="row">
             <div className="col-xl-4 col-lg-5 wow fadeInUp animated" data-wow-delay="300ms">
               <div className="services-details__sidebar">
-                <ServiceConact nameService={"nombre servicio"} />
+                <ServiceConact />
               </div>
               <WhyChoose />
               <Skills />
