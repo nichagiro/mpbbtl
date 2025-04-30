@@ -1,7 +1,7 @@
 const Loading = () => {
   return (
     <div className="preloader">
-      <div className="preloader__image" style={{ backgroundImage: "url(/images/loader.webp)" }}></div>
+      <div className="preloader__image" style={{ backgroundImage: "url(/images/miraMPM.webp)" }}></div>
     </div>
   )
 }
