@@ -58,13 +58,16 @@ const ContactSection: React.FC = () => {
                       <Input type="text" placeholder="Nombre" name="name" required />
                     </div>
                     <div className="col-md-6">
-                      <Input type="email" placeholder="Email" name="email" required />
+                      <Input type="text" placeholder="Cargo" name="job" required />
                     </div>
                     <div className="col-md-6">
                       <Input type="text" placeholder="Celular" name="phone" required />
                     </div>
                     <div className="col-md-6">
-                      <Input type="text" placeholder="Asunto" name="subject" required />
+                      <Input type="email" placeholder="Email" name="email" required />
+                    </div>
+                    <div className="col-md-12">
+                      <Input type="text" placeholder="Empresa" name="company" required />
                     </div>
                     <div className="col-md-12">
                       <Textarea name="message" placeholder="Mensaje" required />

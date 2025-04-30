@@ -14,20 +14,6 @@ export const services = [
     description: "Tu marca en movimiento, llegando donde está tu audiencia. Aumentamos la visibilidad de tu marca en los espacios donde tu público realmente está. Nuestras estrategias de publicidad en movimiento y experiencias urbanas están diseñadas para generar alto impacto y recordación."
   },
   {
-    id: "4",
-    slug: "consultoria-y-diseno-de-estrategias-experienciales",
-    title: "Consultoría y diseño de estrategias experienciales",
-    smallImage: "/images/service/services-2-6.webp",
-    imageIcon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGh0lEQVR4nO1ZaYxURRB+IopnvKIY8Arx/uHBqiwzVa+r3uySFfFIdFHUH97GP95BQWVjNJLID40xGP+giRLPxCOKP4CIVxQPQEUUVA6F3el+C6wgCIKMqTfdu7PDe29ndmaUKJW87OzrftVV3XV8Ve15e+k/RqGfO98AdWig+Rp4mUHSGvh7jbzAAM0I/YALSg319lTK+0GrQf7UIBdKHw3Uo5F39X/HK/Kgri14HUO8PYUKSg01wE87YTXQ5xr4tlCp0wtNTftFc7yOIRuyLSeI8Br4nd65SG9vaGk5zM35V5XQQK9YodYZpIsq+U5n1DkGeXF0QsChAe4S5TTSdoO0WgPNNkhXuo1oOBnkB62pLNNKHVvNtyva2oZpoHdLzG2ZRlpTVMa+Q1pjQE1onAae53WO5RMN0DYDvLlLqZMGw+OX5uYDNdLy4smQknerlDogD6rFAL/eZ4L8sNcoMkDTrADTauOjJljfeqt8LB8pRN12ndtrEjhZAPpEFshDblQtfArt7ftaP/kjzieM758rYwZpy2BPPpU08K8GeWvB8/aplZdB/lg2ZT3i8bHjQB3WxB6tda0Y5rxSHLMeyc3ln7W53FFx491KHedCe61rxS0+V5h3+/4ZtfApnNm+vwbeKE/qesCbJUzXslY8YwzutLv0RE18QF1lzealAaLbXwZpqVdvkoyskX4TPxGHHAyPHoAjrK+JIpmBIptBfsFrBIU+X+0Sl0CSar7dqNThBvkzG1qfSU2cyF8MpGzNZIAes4tsCpGuqeibbHChQBH73QJJginZf7aFMs/VXfjdBPPpjuLR0xL5vxuDC0LkwPj+KVqpQwS+CLzXyPdqoK/6kDC9KsImRSrddxLvr2uacFDDFckjXWp37XkDPCnymzI4Xwbtd1qT3C54SyCIIGZR1CA9ZZAfkrrF2JCbpGxdSTKzBl5kbT1vAeAODfyiRpojKFcDfSAmEgkKuVO7m4OREfQH3pioLNJ39reRU224Igbogf5C0FLjB1jJt7LTeT831iDdqIHuC5Fu1aCuMMA/lhViTzZUCbFbgQ0a6JEQ+JZ8VjXXg29Xa+vBoU/3RCeJtFYjrXfoeC/9r2hFW9uwLqAxBoJ2jTyufFwcXDooEk418gZbkE2K46WzCozPE+Xvun8i5ArJQgbocemUlDqn2HcnwNFFJWiqRv5zt8gkIBBplgsMkuk18PVFTNUbOLZI1hco0zAlokQHtLAkXK7VyF/2CUq/G+TX7JgAvlka6fIww6e5hoVNdrs08rORQ/cp8LXL/Kb4/XK3MXUnAzTd7uyqMKvItXQksZXV27vE5Mq/l9pDI99fdlLvGaC7BdrLnDCjzjPA37hk2yBFuCsNyAk2spl5fhofDfSh3fU5seNKnWw3ZavAea/eEN6ZT1JjTSNPsXOmp/GSIGDnTU2ewysj36sSYVcGS4o4aWcScjVZvqES1OpOTuanzAmjRseYYHg95O/PXKBI0XSyceOS5R1kqYRPEirIQ26UNb31Xr1JnFFsVsChRKG4OWE2uNgqsjqNV190im+35scEwyVUS+Sr+4lYjBU5oDTR4uZooMnW9mek8ZI8ZE92csrJmnr00BIE4DddE9qFy34CgLrMKrJNo7oujoe8j7J8lET5kvg59INVdGFDOvbCtLfm9nli/DjNtMp+G8dD3luzmhknpBa4Ys2zoZdDBvhmu+vdcTHeJsjO4o4HXDoWlcL2OiJppw3ST5Z/R8OUcILK1VrUqGsORsYKAzTVCVz63iko+SaZN0fIICnE1xdvCZqVHc+0jEhsUlsIUvrevZPxgRTpbBTOkh0yqG5yRy+XnUkCicmlKZIG1Q3yR+40pbMZZjKH1i9/AN/lzMkqsUjaPnHz8xCcJa2cuMTYm1CLNcq4OD8JMy0jpNwt6b70yH1MTXVKT/O4Ix3AcwJI3zYumtgb3rklynYaDEaXztFZPrsUqguKljZQ19jWY/ptntcxRJJrdL3dB/OXSN9rUIpo4JddKJROYdycqM2DPK9E2U3S5E66LrCJdYpB+rkEym+VJBnXy9JZBa5NJIpVfTcTAje5AklgdewcKZgiWy6GY6k1pOqrhL/senTNhvxGSYW4OM7JpVosVpdR/ho/yJZoRc88McOqFihdC4PREjwqWgvSS4QYRXi8gxJpj+xmUhiuhqRXXN4HMLu1XXlHEvQZNFV5YtU90KDb3FpObBBKbKvaD/aSt2fS35Kg535pA/SUAAAAAElFTkSuQmCC",
-    shortDescription: "Desde vallas hasta material promocional, aseguramos visibilidad con calidad.",
-    listContent: [
-      "Diseño de estrategias personalizadas para cada cliente.",
-      "Implementación y ejecución con altos estándares de calidad.",
-      "Medición de impacto con data relevante.",
-    ],
-    description: "Transformamos interacciones en experiencias significativas. Diseñamos experiencias que van más allá de la publicidad tradicional. Creamos eventos y activaciones inmersivas que generan emociones y fortalecen la conexión con la marca."
-  },
-  {
     id: "5",
     slug: "activaciones-de-marca-y-experiencias-en-vivo",
     title: "Activaciones de marca y experiencias en vivo",
@@ -40,5 +26,19 @@ export const services = [
       "Experiencias inmersivas con tecnología y marketing sensorial.",
     ],
     description: "Convertimos la experiencia de marca en una ventaja competitiva. Diseñamos estrategias que convierten la experiencia de marca en un diferenciador competitivo. Nos integramos con tu equipo para garantizar campañas alineadas con tus objetivos de negocio."
+  },
+  {
+    id: "4",
+    slug: "consultoria-y-diseno-de-estrategias-experienciales",
+    title: "Consultoría y diseño de estrategias experienciales",
+    smallImage: "/images/service/services-2-6.webp",
+    imageIcon: "data:image/png;base64,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",
+    shortDescription: "Desde vallas hasta material promocional, aseguramos visibilidad con calidad.",
+    listContent: [
+      "Diseño de estrategias personalizadas para cada cliente.",
+      "Implementación y ejecución con altos estándares de calidad.",
+      "Medición de impacto con data relevante.",
+    ],
+    description: "Transformamos interacciones en experiencias significativas. Diseñamos experiencias que van más allá de la publicidad tradicional. Creamos eventos y activaciones inmersivas que generan emociones y fortalecen la conexión con la marca."
   },
 ];

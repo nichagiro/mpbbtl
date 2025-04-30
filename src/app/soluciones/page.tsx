@@ -92,13 +92,17 @@ export default async function Servicios() {
                   <Picture src="/images/service/service-detail.webp" />
                 </div>
                 {
-                  services.map(item => (
-                    <Content
+                  services.map((item, index) => (
+                    <div
                       key={item.id}
-                      body={item.description}
-                      title={item.title}
-                      list={item.listContent}
-                    />
+                      className={`${index + 1 === services.length ? "pb-0" : "pb-4"}`}
+                    >
+                      <Content
+                        body={item.description}
+                        title={item.title}
+                        list={item.listContent}
+                      />
+                    </div>
                   ))
                 }
               </div>
