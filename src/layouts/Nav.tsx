@@ -11,7 +11,7 @@ const Nav = () => {
           <div className="container-fluid">
             <div className="main-menu__logo">
               <Link href="/">
-                <Picture src="/images/logo-light.webp" width="266" height="100" alt="logo mpm marketing digital" />
+                <Picture src="/images/logo-light.webp?v=1" width="266" height="100" alt="logo mpm marketing digital" />
               </Link>
             </div>
             <div className="main-menu__nav">
@@ -50,7 +50,7 @@ const Nav = () => {
             <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
             <div className="logo-box">
               <Link href="/" title="mpm logo">
-                <Picture src="/images/logo-light.webp" width="266" height="100" alt="logo mpm btl" />
+                <Picture src="/images/logo-light.webp?v=1" width="266" height="100" alt="logo mpm btl" />
               </Link>
             </div>
             <div className="mobile-nav__container"></div>

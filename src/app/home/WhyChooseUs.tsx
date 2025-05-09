@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
                 <div style={{ height: 457 }} />
               </div>
               <div className="why-choose__image__author wow fadeInRight animated" data-wow-delay="300ms">
-                <Picture src="/images/resources/why-choose-1-2.webp" alt="porque elegirnos mpb marketing dital" />
+                <Picture src="/images/resources/why-choose-1-2.webp?v=1" alt="porque elegirnos mpb marketing dital" />
               </div>
               <div className="video-one__banner__curved-circle-box wow fadeInUp animated" data-wow-delay="400ms" >
                 {/* esta etiqueta realmente es un <a/> para linkear a youtube pop-up */}

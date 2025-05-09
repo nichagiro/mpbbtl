@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="main-footer__top line mt-5 pt-5 pb-5 wow fadeInUp animated" data-wow-delay="100ms">
             <Link href="/" className="main-footer__logo">
-              <Picture src="/images/logo-light.webp" alt="logo mpm marketing digital" />
+              <Picture src="/images/logo-light.webp?v=1" alt="logo mpm marketing digital" />
             </Link>
             <div className="main-footer__social">
               <Socials />

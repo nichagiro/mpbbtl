@@ -15,7 +15,7 @@ const HeroBanner = () => {
             </h2>
           </div>
           <div className="hero-banner__image wow fadeInUp animated" data-wow-delay="600ms">
-            <Picture src="/images/backgrounds/hero-2-2.webp" alt="ogency" width={1472} height={832} style={{ maxHeight: "584px", objectFit: "cover" }} />
+            <Picture src="/images/backgrounds/hero-2-2.webp?v=1" alt="ogency" width={1472} height={832} style={{ maxHeight: "584px", objectFit: "cover" }} />
           </div>
         </div>
       </div>

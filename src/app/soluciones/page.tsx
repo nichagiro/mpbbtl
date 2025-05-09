@@ -89,7 +89,7 @@ export default async function Servicios() {
             <div className="col-xl-8 col-lg-7 wow fadeInUp animated" data-wow-delay="400ms">
               <div className="services-details__content">
                 <div className="services-details__thumb">
-                  <Picture src="/images/service/service-detail.webp" />
+                  <Picture src="/images/service/service-detail.webp?v=1" />
                 </div>
                 <div className="pt-4">
                   {

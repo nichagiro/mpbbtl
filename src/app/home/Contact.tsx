@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
             <div className="ogency-stretch-element-inside-column">
               <div className="ogency-stretch__image wow slideInRight animated" data-wow-delay="400ms">
                 <Picture
-                  src="/images/resources/contact-1.webp"
+                  src={"/images/resources/contact-1.webp?v=1"}
                   alt="contacto mpb marketing digital"
                   width={944}
                   height={672}
