@@ -1406,7 +1406,7 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-  --ogency-color: #5d5d5d;
+  --ogency-color: #8E8E8E;
   --ogency-color-rgb: 93, 93, 93;
   --ogency-base: #EF3E42;
   --ogency-base-rgb: 245, 144, 13;
@@ -1423,7 +1423,7 @@
 body {
   font-family: var(--font-sarabun);
   color: var(--ogency-color);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.875;
   font-weight: 500;
 }
@@ -3732,7 +3732,7 @@ h6 {
 
 .hero-banner__image {
   position: relative;
-  background-color: var(--ogency-black);
+  /* background-color: var(--ogency-black); */
 }
 
 .hero-banner__image img {
@@ -7133,7 +7133,6 @@ h6 {
   margin: auto;
   max-width: 495px;
   max-height: 457px;
-  background-color: var(--ogency-black);
   overflow: hidden;
   object-fit: cover;
   border-radius: 50%;
@@ -7789,13 +7788,13 @@ h6 {
   height: 100%;
 }
 
+
 .ogency-stretch__image {
   position: relative;
   margin-left: auto;
   background-color: var(--ogency-black2);
-  ;
-  max-width: 890px;
-  height: 100%;
+  /* max-width: 890px; */
+  height: 94%;
   overflow: hidden;
 }
 
@@ -9527,7 +9526,7 @@ h6 {
 .services-details__banner__image {
   height: 363px;
   position: absolute;
-  right: -41px;
+  right: -10px;
   bottom: 0;
 }
 
@@ -9625,7 +9624,7 @@ h6 {
 
 .services-details__thumb {
   position: relative;
-  background-color: var(--ogency-black2);
+  /* background-color: var(--ogency-black2); */
   margin-bottom: 20px;
 }
 

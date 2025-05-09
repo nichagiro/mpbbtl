@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
             <div className="why-choose__image">
               <div className="why-choose__image__shape wow fadeIn animated" data-wow-delay="200ms">
                 {/* <Picture src="/images/resources/why-choose-1-1.webp" alt="mpm btl" /> */}
-                <div style={{ height: 527 }} />
+                <div style={{ height: 457 }} />
               </div>
               <div className="why-choose__image__author wow fadeInRight animated" data-wow-delay="300ms">
                 <Picture src="/images/resources/why-choose-1-2.webp" alt="porque elegirnos mpb marketing dital" />

@@ -1,16 +1,16 @@
 (function ($) {
   "use strict";
 
-  if ($(".video-popup").length) {
-    $(".video-popup").magnificPopup({
-      type: "iframe",
-      mainClass: "mfp-fade",
-      removalDelay: 160,
-      preloader: true,
+  // if ($(".video-popup").length) {
+  //   $(".video-popup").magnificPopup({
+  //     type: "iframe",
+  //     mainClass: "mfp-fade",
+  //     removalDelay: 160,
+  //     preloader: true,
 
-      fixedContentPos: false,
-    });
-  }
+  //     fixedContentPos: false,
+  //   });
+  // }
 
   if ($(".img-popup").length) {
     var groups = {};

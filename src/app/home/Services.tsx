@@ -20,7 +20,7 @@ const Services = () => {
               <InfoCard
                 index={index}
                 imageIcon={service.imageIcon}
-                title={service.title}
+                title={service.shortTitle}
                 description={""}
                 link={"/soluciones"}
                 image={service.smallImage}

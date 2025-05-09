@@ -63,7 +63,7 @@ const Nav = () => {
               </li>
               <li>
                 <i className="icon-phone-call"></i>
-                <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>{CONTACT_NUMBER}</a>
+                <a href={`tel:${CONTACT_NUMBER.replaceAll(" ", "")}`}>{CONTACT_NUMBER}</a>
               </li>
             </ul>
             <div className="mobile-nav__social">

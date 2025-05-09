@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="main-footer__about">
               <p className="footer-widget__text">Comencemos a trabajar juntos</p>
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a> <br />
-              <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>{CONTACT_NUMBER}</a>
+              <a href={`tel:${CONTACT_NUMBER.replaceAll(" ", "")}`}>{CONTACT_NUMBER}</a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">

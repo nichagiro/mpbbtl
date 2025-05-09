@@ -92,8 +92,8 @@ const ContactSection: React.FC = () => {
                 <Picture
                   src="/images/resources/contact-1.webp"
                   alt="contacto mpb marketing digital"
-                  width={890}
-                  height={763}
+                  width={944}
+                  height={672}
                 />
                 <div className="ogency-stretch__image__angle-top"></div>
                 <div className="ogency-stretch__image__angle-middle"></div>
