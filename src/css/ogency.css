@@ -8369,7 +8369,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(/images/backgrounds/page-header-bg-1-1.webp);
+  background-image: url(/images/backgrounds/page-header-bg-1-1.webp?v=1);
 }
 
 .page-header__overlay {
@@ -8381,7 +8381,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  background-image: url(/images/backgrounds/page-header-bg-overlay.webp);
+  background-image: url(/images/backgrounds/page-header-bg-overlay.webp?v=1);
 }
 
 .page-header .container {

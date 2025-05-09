@@ -14,8 +14,7 @@ type InfoCardProps = {
 const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, link, index, image, imageIcon }) => {
   return (
     <div className="service-two__item wow fadeInUp animated h-100" data-wow-delay={`${200 + index * 100}ms`}>
-      <div
-        className="service-two__item__shape" style={{ backgroundImage: `url(/images/backgrounds/service-shape-2.webp)` }} />
+      <div className="service-two__item__shape" style={{ backgroundImage: `url(/images/backgrounds/service-shape-2.webp)` }} />
       <div className="service-two__item__inner">
         <div className="service-two__item__hover" style={{ backgroundImage: `url(${image})` }} />
         <div className="service-two__item__icon">
