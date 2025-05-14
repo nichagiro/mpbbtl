@@ -27,8 +27,8 @@ const About = () => {
             </div>
             <div className="row">
               {counterData.map((item, index) => (
-                <div className="col-md-6" key={index}>
-                  <Counter {...item} />
+                <div className="col-md-6 d-flex justify-content-center" key={index}>
+                  <Counter {...item} reverse/>
                 </div>
               ))}
             </div>
@@ -43,6 +43,6 @@ export default About
 
 
 const counterData = [
-  { count: 2, data: "k", title: "Proyectos Completados" },
-  { count: 1, data: "k", title: "Clientes Satisfechos" },
+  { count: 860, data: "+", title: "Proyectos Completados" },
+  { count: 146, data: "+", title: "Clientes Satisfechos" },
 ];

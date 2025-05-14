@@ -6231,13 +6231,11 @@ h6 {
 }
 
 .fact-one__item__count {
-  font-size: 120px;
+  font-size: 90px;
   font-weight: 800;
   line-height: 1;
   display: block;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--ogency-black3);
+  -webkit-text-fill-color: var(--ogency-base);
   transition: all 400ms ease;
   margin-bottom: 16px;
 }

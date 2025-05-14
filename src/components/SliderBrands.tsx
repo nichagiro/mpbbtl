@@ -4,9 +4,10 @@ import Picture from "./Picture";
 
 interface SliderBrandsProps {
   items: string[];
+  size?: string;
 }
 
-const SliderBrands: React.FC<SliderBrandsProps> = ({ items }) => {
+const SliderBrands: React.FC<SliderBrandsProps> = ({ items = [], size = 100 }) => {
 
   useEffect(() => {
     window.jQuery(".client-carousel__one").owlCarousel({
@@ -45,8 +46,8 @@ const SliderBrands: React.FC<SliderBrandsProps> = ({ items }) => {
   return (
     <div className="client-carousel__one ogency-owl__carousel owl-theme owl-carousel">
       {items.map((item, index) => (
-        <div className="client-carousel__one__item" key={index} style={{ width: 100, height: 100 }}>
-          <Picture src={item} className="rounded-circle" height={100} />
+        <div className="client-carousel__one__item" key={index} style={{ width: size, height: size }}>
+          <Picture src={item} className="rounded-circle" height={size} />
         </div>
       ))}
 

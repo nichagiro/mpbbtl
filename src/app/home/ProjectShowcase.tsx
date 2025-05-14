@@ -66,14 +66,14 @@ export default ProjectShowcase;
 
 
 const clients = [
-  "/images/clients/andina.webp",
-  "/images/clients/bimbo2.webp",
-  "/images/clients/brilla2.webp",
-  "/images/clients/coca-cola-logo-1-1.webp",
-  "/images/clients/deprisa2.webp",
-  "/images/clients/energiteca.webp",
-  "/images/clients/exito2.webp",
-  "/images/clients/finsocial.webp",
-  "/images/clients/gaseosas-postobon-cambian-de-logo.webp",
-  "/images/clients/taskus.webp",
+  "/images/clients/andina.webp?v=1",
+  "/images/clients/bimbo2.webp?v=1",
+  "/images/clients/brilla2.webp?v=1",
+  "/images/clients/coca-cola-logo-1-1.webp?v=1",
+  "/images/clients/deprisa2.webp?v=1",
+  "/images/clients/energiteca.webp?v=1",
+  "/images/clients/exito2.webp?v=1",
+  "/images/clients/finsocial.webp?v=1",
+  "/images/clients/gaseosas-postobon-cambian-de-logo.webp?v=1",
+  "/images/clients/taskus.webp?v=1",
 ]
