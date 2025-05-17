@@ -1,3 +1,4 @@
+import CardList from "@/components/CardList"
 import SectionTitle from "@/components/SectionTitle"
 
 const OurBenefits = () => {
@@ -7,22 +8,15 @@ const OurBenefits = () => {
         <div className="section-title text-center">
           <SectionTitle tagline="Servicios" />
         </div>
-        {
-          (Object.keys(data) as Array<keyof typeof data>).map(item => (
-            <div key={item} className="mb-5">
-              <p className="services-details__benefit__text">{item}</p>
-              <ul className="services-details__benefit__lists list-unstyled d-md-flex flex-wrap gap-2">
-                {
-                  data[item].map(subItem => (
-                    <li key={subItem}>
-                      <span className="fa fa-check-circle" />
-                      {subItem}
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          ))}
+        <div className="mb-5 row">
+          {
+            (Object.keys(data) as Array<keyof typeof data>).map(item => (
+              <div key={Math.random()} className="col-lg-4 col-md-6 col-sm-12">
+                <CardList title={item} price="" features={data[item]} />
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   )
